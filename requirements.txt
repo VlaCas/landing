@@ -1,0 +1,6 @@
+Flask==3.1.2
+
+# Notes:
+# - Flask incluye Jinja2, Werkzeug y otras dependencias necesarias.
+# - Si quieres versiones fijas de dependencias adicionales, ejecútalas en el entorno y luego
+#   genera un `pip freeze > requirements.txt` para obtener una lista completa.
