@@ -1,6 +1,13 @@
 Flask==3.1.2
+requests==2.31.0
+python-dotenv==1.0.0
+gunicorn==21.2.0
 
-# Notes:
-# - Flask incluye Jinja2, Werkzeug y otras dependencias necesarias.
-# - Si quieres versiones fijas de dependencias adicionales, ejecútalas en el entorno y luego
-#   genera un `pip freeze > requirements.txt` para obtener una lista completa.
+# Notas:
+# - `Flask` es la dependencia principal utilizada por la aplicación.
+# - `requests` se añade por si el backend necesita realizar llamadas HTTP a APIs externas.
+# - `python-dotenv` permite cargar variables de entorno desde un archivo `.env` en desarrollo.
+# - `gunicorn` es recomendado para ejecutar la app en producción (Linux). En Windows puedes usar
+#   el servidor de desarrollo o herramientas alternativas.
+# Si prefieres versiones distintas o quieres congelar todas las dependencias del entorno,
+# ejecuta `pip freeze > requirements.txt`.

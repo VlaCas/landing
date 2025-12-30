@@ -2233,6 +2233,28 @@ footer:not(.footer-light) #form_subscribe.form-dark input[type=text] {
     -webkit-border-radius: 0 0 0 0;
 }
 
+#wrapper-btn-buy {
+    background: var(--primary-color);
+    padding: 0  0 !important;
+    height: min-content !important;
+}
+
+#wrapper-btn-buy:hover {
+    background: #ffffff;
+    cursor: pointer;
+}
+
+#wrapper-btn-buy > a {
+    width: 100%;
+    display: block;
+    padding: 14px 0;
+    color: #ffffff;
+}
+
+#wrapper-btn-buy:hover > a {
+    color: #000000;
+}
+
 #form_quick_search {
     font-family: var(--body-font);
     display: inline-block;
@@ -2901,12 +2923,69 @@ a.btn-main.btn-white {
 
 header a.btn-main,
 header a.btn-line {
-    padding: 6px 20px !important;
+    padding: 0px 14px;
+    line-height: 2em;
 }
 
 header a.btn-main i{
     display: none;
 }
+
+/* Language dropdown button: match header .btn-main appearance and primary color */
+.lang-dropdown {
+    display:inline-block;
+    position:relative;
+    margin-left:10px;
+}
+
+.lang-toggle {
+    background:var(--primary-color);
+    color:#fff;
+    border:none;
+    outline:0;
+    font-weight:800;
+    padding:0px 14px;
+    line-height: 2em;
+    font-size:14px;
+    border-radius:0;
+    display:inline-flex;
+    align-items:center;
+    gap:8px
+}
+
+.lang-toggle i {
+    font-size:14px
+}
+
+.lang-options {
+    position:absolute;
+    right:0;
+    top:110%;
+    background:#fff;
+    border-radius:4px;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+    display:none;
+    z-index:100000;
+    min-width:160px
+}
+
+.lang-options button {
+    display:block;
+    border:none;
+    background:transparent;
+    padding:8px 12px;
+    width:100%;
+    text-align:left;
+    color:#333;
+    font-weight:600
+}
+
+.lang-options button:hover {
+    background:#f2f2f2;
+    cursor:pointer
+}
+
+
 
 .col-right a.btn-main {
     font-size: 14px;
@@ -3140,6 +3219,29 @@ a.btn-link {
 
 
 /* ------------------------------ */
+
+/* Fix: restore Bootstrap SVG chevron for accordion buttons (override MDB icon-font rules) */
+.accordion-button::after{
+    content: "" !important;
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    pointer-events: none; /* let clicks pass to the button */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .18s ease-in-out, background-image .12s ease-in-out, filter .12s ease-in-out;
+    filter: drop-shadow(0 0 0 rgba(0,0,0,0));
+}
+.accordion-button:hover::after{
+    /* on hover, show darker chevron for contrast */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed)::after{
+    transform: rotate(-180deg);
+}
+
 
 .spacer-single {
     width: 100%;
@@ -8395,6 +8497,16 @@ object {
     font-weight: 600;
 }
 
+.nav-link.active {
+    background-color: rgba(66, 66, 66, 0.69) !important;
+    border-color: rgba(255,255,255,0.4) !important;
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    border-color: rgba(255,255,255,0.4) !important;
+}
+
 .tab-default .tab-content {
     margin-top: 20px;
 }
@@ -13169,6 +13281,8 @@ a.read_more i {
 
 .menu_side_area {
     margin-left: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .rtl .menu_side_area {
@@ -14958,7 +15072,7 @@ img {
     }
 
     .sm-pt10 {
-        padding-top: 10px;
+        padding-top: 0px;
     }
 
     #menu-btn {
@@ -15281,6 +15395,9 @@ img {
     header.header-mobile {
         overflow: hidden;
         position: relative;
+        top: 0;
+        height: 90px;
+        padding-top: 15px;
     }
 
     header.header-mobile #mainmenu {
@@ -15770,7 +15887,7 @@ img {
         right: 0;
         text-align: right;
         z-index: 0;
-        display: block;
+        display: flex;
     }
 
     header .container {
@@ -15986,6 +16103,8 @@ img {
     }
 
     header a.btn-main{
+    /* padding: 0px 14px !important; */
+    line-height: 5em;
     padding: 7px 12px !important;    
     border-radius: 2px !important;
     margin-top: -1px;
@@ -16062,4 +16181,50 @@ img {
         left: 0;
         top: -21px;
     }
+}
+
+/* Marquee side fades: seamless mask on left/right */
+.marquee{position:relative;overflow:hidden}
+.marquee::before,.marquee::after{content:"";position:absolute;top:0;bottom:0;width:80px;pointer-events:none;z-index:2}
+.marquee::before{left:0;background:linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0))}
+.marquee::after{right:0;background:linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))}
+.marquee-track{position:relative;z-index:1}
+
+@media (max-width:767px){
+    .marquee::before,.marquee::after{width:40px}
+}
+
+/* Light background option: add class 'light-mask' to .marquee when needed */
+.marquee.light-mask::before{background:linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0))}
+.marquee.light-mask::after{background:linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0))}
+
+@media (prefers-reduced-motion: reduce){
+    .marquee-track{animation:none}
+}
+
+/* Marquee: infinite left-to-right scroll of artist names */
+.marquee{overflow:hidden;position:relative}
+.marquee-track{display:flex;flex-wrap:nowrap;align-items:center}
+.marquee-list{display:flex;flex-wrap:nowrap;list-style:none;padding:0;margin:0}
+.marquee-list li{white-space:nowrap;padding:0 2rem;font-size:1rem;color:#fff;opacity:0.95}
+.marquee-track{animation:marquee 6s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+
+@keyframes marquee{
+    from{transform:translateX(0)}
+    to{transform:translateX(calc(-50% - 14px))}
+}
+
+/* make sure duplicated lists align exactly and there is no gap */
+.marquee .marquee-list{margin-right:0}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce){
+    .marquee-track{animation:none}
+}
+
+/* Adjust sizes on small screens */
+@media (max-width:767px){
+    .marquee-list li{padding:0 1rem;font-size:.95rem}
+    .marquee-track{animation-duration:15s}
 }
