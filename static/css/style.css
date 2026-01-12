@@ -44,6 +44,10 @@
     --bs-gutter-x: 40px;
 }
 
+.g-custom2-x{
+    --bs-gutter-x: 120px;
+}
+
 /* ================================================== */
 
 
@@ -873,20 +877,22 @@ header:not(.header-mobile) #mainmenu>li:hover ul.mega {
 #menu-btn {
     display: none;
     float: right;
-    margin-top: -3px;
+    /* margin-top: -3px; */
     width: 32px;
-    height: 32px;
+    height: 27px;
     padding: 4px;
     text-align: center;
     cursor: poInter;
     color: #fff;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 #menu-btn:before {
     font-family: FontAwesome;
     content: "\f0c9";
-    font-size: 20px;
+    font-size: 18px;
+    position: relative;
+    top: -3px;
 }
 
 #menu-btn:hover {
@@ -16104,11 +16110,11 @@ img {
 
     header a.btn-main{
     /* padding: 0px 14px !important; */
-    line-height: 5em;
-    padding: 7px 12px !important;    
+    /* line-height: 5em; */
+    /* padding: 7px 12px !important;     */
     border-radius: 2px !important;
-    margin-top: -1px;
-    margin-right: -10px;
+    /* margin-top: -1px;
+    margin-right: -10px; */
     }
 
     header a.btn-main i{
@@ -16212,7 +16218,7 @@ img {
 
 @keyframes marquee{
     from{transform:translateX(0)}
-    to{transform:translateX(calc(-50% - 14px))}
+    to{transform:translateX(calc(-150% + 160px))}
 }
 
 /* make sure duplicated lists align exactly and there is no gap */
