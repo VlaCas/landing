@@ -15013,6 +15013,14 @@ img {
     .slider_text {
         padding-top: 0px;
     }
+
+    h1, .h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        line-height: 1.1em;
+        letter-spacing: 10px;
+        word-break: break-word;
+    }
 }
 
 @media only screen and (max-width: 1090px) {
@@ -15023,9 +15031,25 @@ img {
         position: absolute;
         top: 30px;
     }
+
+    h1, .h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        line-height: 1.1em;
+        letter-spacing: 10px;
+        word-break: break-word;
+    }
 }
 
 @media only screen and (max-width: 992px) {
+
+    h1, .h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        line-height: 1.1em;
+        letter-spacing: 10px;
+        word-break: break-word;
+    }
 
     .de_table .tr .td:nth-child(4),
     .de_table .tr .td:nth-child(5),

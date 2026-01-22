@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function setError(el, msg) {
     if (!el) return;
-    console.log('setError', el, msg);
     el.classList.remove('is-valid');
     el.classList.add('is-invalid');
     const fb = ensureFeedback(el);
@@ -141,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const endpoint =
       form.getAttribute('data-endpoint') ||
-      'https://function-bun-production-39cf.up.railway.app/api/customers';
+      'https://preorform.fuegofest.es/api/customers';
 
     try {
       const resp = await fetch(endpoint, {

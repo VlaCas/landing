@@ -11,8 +11,8 @@
         '.menu_side_area a.btn-main span': 'Mercar entrada',
         
         // Carousel (solo el activo, el segundo está comentado)
-        '#de-carousel .carousel-item.active h1': 'O maior festival de música do ano',
-        '#de-carousel .carousel-item.active .lead': 'Un evento único que reúne o mellor da música urbana e pop nun só lugar, cos artistas máis influentes do momento!',
+        '#de-carousel .carousel-item.active h1': 'V aniversario',
+        '#de-carousel .carousel-item.active .lead': 'Celebra con nós un aniversario cheo de música urbana e pop no paraíso de Moaña!',
         '#de-carousel .carousel-item.active .btn-main': 'Explorar',
         
         // Sección fecha
@@ -176,8 +176,8 @@
         '.menu_side_area a.btn-main span': 'Comprar entrada',
         
         // Carousel (solo el activo, el segundo está comentado)
-        '#de-carousel .carousel-item.active h1': 'El mayor festival de música del año',
-        '#de-carousel .carousel-item.active .lead': 'Un evento único que reúne lo mejor de la música urbana y pop en un solo lugar, con los artistas más influyentes del momento!',
+        '#de-carousel .carousel-item.active h1': 'V aniversario',
+        '#de-carousel .carousel-item.active .lead': 'Celebra con nosotros un aniversario lleno de música urbana y pop en el paraíso de Moaña!',
         '#de-carousel .carousel-item.active .btn-main': 'Explorar',
         
         // Sección fecha
