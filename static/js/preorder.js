@@ -62,12 +62,39 @@ document.addEventListener('DOMContentLoaded', function () {
   function validateWhatsapp() {
     const raw = (whatsapp.value || '').trim();
     const cleaned = raw.replace(/\s|\-|\(|\)/g, '');
+
+    // Validación básica internacional
     if (!/^\+?\d{9,15}$/.test(cleaned)) {
-      setError(whatsapp, 'Número de teléfono no válido. Formato: +34123456789 o 9-15 dígitos.');
+      setError(
+        whatsapp,
+        'Número no válido. Usa formato internacional o 9–15 dígitos.'
+      );
       return false;
     }
-    clearError(whatsapp); return true;
+
+    // 🇪🇸 Validación específica España
+    // +34XXXXXXXXX o XXXXXXXXX
+    const esNumber = cleaned.startsWith('+34')
+      ? cleaned.slice(3)
+      : cleaned.length === 9
+        ? cleaned
+        : null;
+
+    if (esNumber) {
+      // Rechazar fijos (8 y 9)
+      if (!/^[67]\d{8}$/.test(esNumber)) {
+        setError(
+          whatsapp,
+          'El número debe ser móvil (WhatsApp). Los teléfonos fijos no son válidos.'
+        );
+        return false;
+      }
+    }
+
+    clearError(whatsapp);
+    return true;
   }
+
 
   function validateEmail() {
     const v = (email.value || '').trim();

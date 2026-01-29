@@ -4,20 +4,21 @@
       title: 'Fuego Fest - Festival de Música',
       selectors: {
         // Menú principal
-        '#mainmenu li:nth-child(1) a': 'Artistas',
-        '#mainmenu li:nth-child(2) a': 'Preventa',
-        '#mainmenu li:nth-child(3) a': 'FAQs',
-        '#mainmenu li:nth-child(4) a': 'Galería',
+        '#mainmenu li:nth-child(2) a': 'Artistas',
+        '#mainmenu li:nth-child(3) a': 'Preventa',
+        '#mainmenu li:nth-child(4) a': 'FAQs',
+        '#mainmenu li:nth-child(5) a': 'Galería',
         '.menu_side_area a.btn-main span': 'Mercar entrada',
+        '#mainmenu div.wrapper-cta-mobile a': 'Mercar entrada',
         
         // Carousel (solo el activo, el segundo está comentado)
         '#de-carousel .carousel-item.active h1': 'V aniversario',
-        '#de-carousel .carousel-item.active .lead': 'Celebra con nós un aniversario cheo de música urbana e pop no paraíso de Moaña!',
-        '#de-carousel .carousel-item.active .btn-main': 'Explorar',
+        '#de-carousel .carousel-item.active .lead': 'O Festival que marca o comezo do verán nas Rías Baixas!',
+        '#de-carousel .carousel-item.active .btn-main': 'Mercar',
         
         // Sección fecha
-        '#section-date h2': 'Xuño 23 2026',
-        '#section-date h3': 'Moaña (Pontevedra) Isla Samertolomeu (San Bartolomeu-Meira), España',
+        '#section-date h2': '23 • 06 • 2026',
+        '#section-date h3': 'Illa de Samertolomeu, Moaña',
         
         // Secciones
         '#section-artists .wm': 'Artistas',
@@ -152,37 +153,45 @@
         'footer .row > div:nth-child(2) .widget ul li:nth-child(4) a': 'Galería',
         'footer .row > div:nth-child(2) .widget ul li:nth-child(5) a': 'Comeza en / Horarios',
         'footer .row > div:nth-child(2) .widget ul li:nth-child(6) a': 'Políticas de compra',
-        'footer .row > div:nth-child(3) .widget h5': 'Mercar Entradas',
-        'footer .row > div:nth-child(3) .widget p': 'Diríxete á nosa plataforma de compra de billetes para obter o teu!',
+        'footer .row > div:nth-child(3) .widget h5': 'Privacidade e legal',
+        'footer .row > div:nth-child(3) .widget ul li:nth-child(1) a': 'Aviso Legal',
+        'footer .row > div:nth-child(3) .widget ul li:nth-child(2) a': 'Política de privacidade',
+        'footer .row > div:nth-child(3) .widget ul li:nth-child(3) a': 'Política de cookies',
+        'footer .row > div:nth-child(3) .widget ul li:nth-child(4) a': 'Termos e condicións',
+        'footer .row > div:nth-child(4) .widget h5': 'Mercar Entradas',
+        'footer .row > div:nth-child(4) .widget p': 'Diríxete á nosa plataforma de compra de billetes para obter o teu!',
         '#btn-buy': 'Mercar',
-        'footer .row > div:nth-child(3) .widget small': 'Chegarás a unha web de confianza. Estaremos agardándote.',
+        'footer .row > div:nth-child(4) .widget small': 'Chegarás a unha web de confianza. Estaremos agardándote.',
         '.subfooter .copy': '© 2025 - Fuego Fest Corp. Todos os dereitos reservados. '
       },
       cookie: {
-        messageText: "Este sitio web emprega <b>cookies</b> para asegurar que obteñas a mellor experiencia.",
-        linkText: 'Saber máis',
-        linkUrl: 'index.html',
-        buttonText: 'Acepto'
+        messageText: "Este sitio web emprega <b>cookies</b> para asegurar que obteñas a mellor experiencia. ", 
+        linkText: 'Saber máis.',
+        linkUrl: '/politica-de-cookies',
+        buttonTextAccept: 'Aceptar',
+        buttonTextReject: 'Declinar',
+        buttonTextConfig: 'Configurar Cookies'
       }
     },
     es: {
       title: 'Fuego Fest - Festival de Música',
       selectors: {
         // Menú principal
-        '#mainmenu li:nth-child(1) a': 'Artistas',
-        '#mainmenu li:nth-child(2) a': 'Preventa',
-        '#mainmenu li:nth-child(3) a': 'FAQs',
-        '#mainmenu li:nth-child(4) a': 'Galería',
+        '#mainmenu li:nth-child(2) a': 'Artistas',
+        '#mainmenu li:nth-child(3) a': 'Preventa',
+        '#mainmenu li:nth-child(4) a': 'FAQs',
+        '#mainmenu li:nth-child(5) a': 'Galería',
         '.menu_side_area a.btn-main span': 'Comprar entrada',
+        '#mainmenu div.wrapper-cta-mobile a': 'Comprar entrada',
         
         // Carousel (solo el activo, el segundo está comentado)
         '#de-carousel .carousel-item.active h1': 'V aniversario',
-        '#de-carousel .carousel-item.active .lead': 'Celebra con nosotros un aniversario lleno de música urbana y pop en el paraíso de Moaña!',
-        '#de-carousel .carousel-item.active .btn-main': 'Explorar',
+        '#de-carousel .carousel-item.active .lead': 'El Festival que marca el inicio del verano en las Rías Baixas!',
+        '#de-carousel .carousel-item.active .btn-main': 'Comprar',
         
         // Sección fecha
-        '#section-date h2': 'Junio 23 2026',
-        '#section-date h3': 'Moaña (Pontevedra) Isla Samertolomeu (San Bartolomeu-Meira), España',
+        '#section-date h2': '23 • 06 • 2026',
+        '#section-date h3': 'Isla Samertolomeu, Moaña',
         
         // Secciones
         '#section-artists .wm': 'Artistas',
@@ -317,17 +326,24 @@
         'footer .row > div:nth-child(2) .widget ul li:nth-child(4) a': 'Galería',
         'footer .row > div:nth-child(2) .widget ul li:nth-child(5) a': 'Comienza en / Horarios',
         'footer .row > div:nth-child(2) .widget ul li:nth-child(6) a': 'Políticas de compra',
-        'footer .row > div:nth-child(3) .widget h5': 'Comprar Entradas',
-        'footer .row > div:nth-child(3) .widget p': 'Dirígete a nuestra plataforma de compra de boletos para obtener el tuyo!',
+        'footer .row > div:nth-child(3) .widget h5': 'Privacidad & Legal',
+        'footer .row > div:nth-child(3) .widget ul li:nth-child(1) a': 'Aviso Legal',
+        'footer .row > div:nth-child(3) .widget ul li:nth-child(2) a': 'Politica de privacidad',
+        'footer .row > div:nth-child(3) .widget ul li:nth-child(3) a': 'Politica de cookies',
+        'footer .row > div:nth-child(3) .widget ul li:nth-child(4) a': 'Terminos y condiciones',
+        'footer .row > div:nth-child(4) .widget h5': 'Comprar Entradas',
+        'footer .row > div:nth-child(4) .widget p': 'Dirígete a nuestra plataforma de compra de boletos para obtener el tuyo!',
         '#btn-buy': 'Comprar',
         'footer .row > div:nth-child(3) .widget small': 'Te redirigiremos a una web de confianza. Te estaremos esperando.',
         '.subfooter .copy': '© 2025 - Fuego Fest Corp. Todos los derechos reservados. '
       },
       cookie: {
-        messageText: "Este sitio web utiliza <b>cookies</b> para asegurar que obtengas la mejor experiencia.",
-        linkText: 'Saber más',
-        linkUrl: 'index.html',
-        buttonText: 'Acepto'
+        messageText: "Este sitio web utiliza <b>cookies</b> para asegurar que obtengas la mejor experiencia. ",
+        linkText: 'Saber más.',
+        linkUrl: '/politica-de-cookies',
+        buttonTextAccept: 'Aceptar',
+        buttonTextReject: 'Rechazar',
+        buttonTextConfig: 'Configurar Cookies'
       }
     }
   };
@@ -362,7 +378,7 @@
       });
     }
     document.documentElement.lang = (lang === 'es') ? 'es' : 'gl';
-    const initial = (lang === 'es') ? 'ES' : 'GL';
+    const initial = (lang === 'gl') ? 'GL' : 'ES';
     const elInit = document.querySelector('.lang-initial');
     if(elInit) elInit.textContent = initial;
 
@@ -375,32 +391,92 @@
         buttonColor: '#ffffff',
         messageText: c.messageText || '',
         linkText: c.linkText || '',
-        linkUrl: c.linkUrl || 'index.html',
-        buttonText: c.buttonText || 'Acepto'
+        linkUrl: c.linkUrl || '/politica-de-cookies',
+        buttonTextAccept: c.buttonTextAccept || 'Aceptar',
+        buttonTextReject: c.buttonTextReject || 'Rechazar',
+        buttonTextConfig: c.buttonTextConfig || 'Configurar Cookies'
       });
     }
   }
 
-  document.addEventListener('DOMContentLoaded', function(){
+  document.addEventListener('DOMContentLoaded', function () {
     const saved = localStorage.getItem('site_lang') || 'gl';
-    const toggle = document.getElementById('langToggle');
-    const options = document.getElementById('langOptions');
-    if(toggle){
-      toggle.addEventListener('click', function(e){
-        e.stopPropagation();
-        if(options) options.style.display = (options.style.display === 'block') ? 'none' : 'block';
-      });
-    }
-    document.querySelectorAll('.lang-option').forEach(function(btn){
-      btn.addEventListener('click', function(){
-        const l = btn.getAttribute('data-lang');
-        localStorage.setItem('site_lang', l);
-        if(options) options.style.display = 'none';
-        applyTranslations(l);
-      });
-    });
-    document.addEventListener('click', function(){ if(options) options.style.display = 'none'; });
 
     applyTranslations(saved);
+    updateAllLangInitials(saved);
+
+    // Abrir / cerrar dropdown
+    document.addEventListener('click', function (e) {
+      const toggle = e.target.closest('.lang-toggle');
+
+      // Cerrar todos
+      document.querySelectorAll('.lang-options').forEach(opt => {
+        opt.style.display = 'none';
+      });
+
+      // Abrir el correspondiente
+      if (toggle) {
+        e.stopPropagation();
+        const dropdown = toggle.closest('.lang-dropdown');
+        const options = dropdown.querySelector('.lang-options');
+        options.style.display = 'block';
+      }
+    });
+
+    // Selección de idioma
+    document.querySelectorAll('.lang-option').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+
+        const lang = btn.getAttribute('data-lang');
+        localStorage.setItem('site_lang', lang);
+
+        applyTranslations(lang);
+        updateAllLangInitials(lang);
+
+        // Cerrar todos
+        document.querySelectorAll('.lang-options').forEach(opt => {
+          opt.style.display = 'none';
+        });
+      });
+    });
+
+    function updateAllLangInitials(lang) {
+      document.querySelectorAll('.lang-initial').forEach(span => {
+        span.textContent = lang.toUpperCase();
+      });
+    }
+  });
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('cookieLangToggle');
+    if (!btn) return;
+
+    // Idioma guardado o por defecto
+    let currentLang = localStorage.getItem('site_lang') || 'gl';
+
+    // Inicializar texto del botón
+    updateButtonText(currentLang);
+
+    btn.addEventListener('click', function () {
+      // Toggle
+      currentLang = currentLang === 'es' ? 'gl' : 'es';
+
+      // Guardar idioma
+      localStorage.setItem('site_lang', currentLang);
+
+      // Aplicar traducciones
+      if (typeof applyTranslations === 'function') {
+        applyTranslations(currentLang);
+      }
+
+      // Actualizar texto del botón
+      updateButtonText(currentLang);
+    });
+
+    function updateButtonText(lang) {
+      btn.textContent = lang.toUpperCase();
+    }
   });
 })();
