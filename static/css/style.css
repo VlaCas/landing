@@ -977,7 +977,8 @@ header:not(.header-mobile) #mainmenu>li:hover ul.mega {
   }
 
   #mainmenu li {
-    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
     font-size: 1.2em;
   }
 
@@ -1063,6 +1064,76 @@ header.header-mobile.header-light #menu-btn:hover {
 
 header.header-mobile.header-light #menu-btn {
     color: #222;
+}
+
+.legal-notice, .cookies-policy, .privacy-policy {
+  padding: 2em 2em 2em 2em;
+  max-width: 1296px;
+  word-break: break-word;
+  margin: auto;
+}
+
+.cookies-policy table {
+  margin: 2em 0;
+  font-size: 2vw;
+  line-height: 1em;
+  width: 100%;
+}
+
+.cookies-policy table th,
+.cookies-policy table td {
+  padding: .6em;
+  word-break: keep-all;
+  max-width: 2.8em;
+}
+
+.cookies-policy h2 {
+  margin-top: 1em;
+}
+
+#faqTabs {
+  width: 300px;
+}
+
+@media (min-width: 400px) {
+  #faqTabs {
+    width: 400px;
+  }
+}
+
+@media (min-width: 600px) {
+  #faqTabs {
+    width: auto;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .legal-notice, .cookies-policy, .privacy-policy {
+    padding: 4em 4em 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .legal-notice, .cookies-policy, .privacy-policy {
+    padding: 9em 6em 0;
+  }
+
+  .cookies-policy table {
+    font-size: .6em;
+    line-height: 1.3em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .legal-notice, .cookies-policy, .privacy-policy {
+    padding: 12em 18em 0;
+  }
+
+  .cookies-policy table {
+    width: 100%;
+    font-size: 1em;
+  }
 }
 
 /* ================================================== */
@@ -10666,10 +10737,6 @@ div.round, .rounded {
 
 #date-delay {
   font-size: 1.8em;
-}
-
-#marquee-wrapper {
-  
 }
 
 @media (min-width: 768px) {
